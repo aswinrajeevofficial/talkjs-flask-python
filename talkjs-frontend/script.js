@@ -28,7 +28,7 @@ const getUser = async () => {
     let agent = await getAgent();
     let user = await getUser();
     const session = new Talk.Session({
-        appId: 'tAU5JKLC',
+        appId: 'YOUR_ID_HERE',
         me: user,
     });
     var conversation = session.getOrCreateConversation(Talk.oneOnOneId(user, agent))
